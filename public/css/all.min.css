@@ -439,6 +439,13 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .features {
+    background: url("../img/top-back-sm.png") no-repeat bottom center/cover;
+    min-height: 655px;
+  }
+}
+
 .features .box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -472,6 +479,7 @@ a {
 @media screen and (max-width: 480px) {
   .features__title {
     font-size: 46px;
+    margin-bottom: 15px;
   }
 }
 
@@ -496,6 +504,7 @@ a {
     width: 304px;
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 
@@ -528,6 +537,12 @@ a {
 @media screen and (max-width: 1011px) {
   .works {
     margin-top: -75px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .works {
+    margin-top: 65px;
   }
 }
 

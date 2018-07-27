@@ -493,6 +493,10 @@ a {
     background: url("../img/top-back-lg.svg") no-repeat bottom center/cover;
     min-height: 610px;
   }
+  @include phones {
+    background: url("../img/top-back-sm.png") no-repeat bottom center/cover;
+    min-height: 655px;
+  }
   & .box {
     display: flex;
     flex-direction: column;
@@ -510,6 +514,7 @@ a {
   }
   @include phones() {
     font-size: 46px;
+    margin-bottom: 15px;
   }
 }
 .features__text {
@@ -527,6 +532,7 @@ a {
     width: 304px;
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 .features__button {
@@ -551,6 +557,9 @@ a {
   }
   @include main(1011px) {
     margin-top: -75px;
+  }
+  @include phones() {
+    margin-top: 65px;
   }
   & .box {
     display: flex;
