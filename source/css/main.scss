@@ -404,6 +404,118 @@ a {
   padding-bottom: 5px;
   cursor: pointer;
 }
+// WORKS AREA
+.works {
+  min-height: 615px;
+  & .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.works__title {
+  font-size: 22px;
+  @include jenya(bunt);
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 105px;
+}
+.work__content {
+  display: flex;
+  width: 100%;
+  padding: 0 7px;
+  justify-content: space-between;
+}
+.works__item {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:nth-child(2) {
+    width: 280px;
+  }
+  &:last-child {
+    width: 320px;
+  }
+}
+.works__item-icon {
+  margin-bottom: 52px;
+}
+.works__item-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #817f7f;
+  position: relative;
+  transition: all 0.3s;
+  &_one {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 106px;
+      width: 40px;
+      height: 3px;
+      border-radius: 8px;
+      background-color: #454949;
+      opacity: 0.1;
+      margin-bottom: 16px;
+      transition: opacity 0.3s;
+    }
+    &:hover {
+      color: #000;
+      &::before {
+        opacity: 0.2;
+      }
+    }
+  }
+  &_two {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      top: -20px;
+      left: 120px;
+      height: 3px;
+      border-radius: 8px;
+      background-color: #454949;
+      opacity: 0.1;
+      margin-bottom: 16px;
+      transition: opacity 0.3s;
+    }
+    &:hover {
+      color: #000;
+      &::before {
+        opacity: 0.2;
+      }
+    }
+  }
+  &_three {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      top: -20px;
+      left: 140px;
+      height: 3px;
+      border-radius: 8px;
+      background-color: #454949;
+      opacity: 0.1;
+      margin-bottom: 16px;
+      transition: opacity 0.3s;
+    }
+    &:hover {
+      color: #000;
+      &::before {
+        opacity: 0.2;
+      }
+    }
+  }
+  &:hover {
+  }
+}
 // FOOTER AREA
 .footer {
   position: relative;
@@ -418,8 +530,7 @@ a {
 }
 /* Common button styles */
 .button {
-  float: left;
-  // min-width: 150px; // max-width: 250px;
+  float: left; // min-width: 150px; // max-width: 250px;
   display: block;
   margin: 1em;
   text-align: center;
